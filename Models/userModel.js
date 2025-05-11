@@ -48,10 +48,11 @@ const UserSchema = new Schema({
         investedAmount: Number,  // Track invested amount separately
         sellPrice: Number,
     }],
-    payoutEnabled: {
-        type: Boolean,
-        default: false, // initially disabled
-    },
+    payoutStatus: {
+        type: String,
+        enum: ['Enable', 'Disable', 'Pending'],
+        default: 'Disable'
+      },      
 });
 
 // Use the following to avoid the OverwriteModelError:

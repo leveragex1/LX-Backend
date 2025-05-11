@@ -9,7 +9,7 @@ router.get("/users/:id", async (req, res) => {
       if (!user) return res.status(404).json({ error: "User not found" });
   
       // Send only the payoutEnabled status
-      res.json({ payoutEnabled: user.payoutEnabled });
+      res.json({ payoutStatus: user.payoutStatus });
     } catch (err) {
       console.error("Error fetching user:", err);
       res.status(500).json({ error: "Server error" });
@@ -18,19 +18,19 @@ router.get("/users/:id", async (req, res) => {
 
 // Admin updates payout status for a user
 router.put('/:userId', async (req, res) => {
-    const { payoutEnabled } = req.body;
-    try {
-        const user = await User.findByIdAndUpdate(
-            req.params.userId,
-            { payoutEnabled },
-            { new: true }
-        );
-        if (!user) return res.status(404).json({ message: 'User not found' });
+  const { payoutStatus } = req.body;
+  try {
+    const user = await User.findByIdAndUpdate(
+      req.params.userId,
+      { payoutStatus },
+      { new: true }
+    );
+    if (!user) return res.status(404).json({ message: 'User not found' });
 
-        res.json({ message: `Payout ${payoutEnabled ? 'enabled' : 'disabled'} for user.` });
-    } catch (error) {
-        res.status(500).json({ message: 'Error updating payout status' });
-    }
+    res.json({ message: `Payout status updated to ${payoutStatus} for user.` });
+  } catch (error) {
+    res.status(500).json({ message: 'Error updating payout status' });
+  }
 });
 
 module.exports = router;

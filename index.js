@@ -29,7 +29,7 @@ const allowedOrigins = [
   // 'https://leveragex-kuxu.onrender.com',  // 11-jan-2025
   // 'https://leveragex-9ndu.onrender.com',     // 31-march-2025
   // 'https://leveragex-4p2t.onrender.com',
-  'https://leveragex-oqsf.onrender.com'        // 31-may-2025
+  'https://leveragex-oqsf.onrender.com',        // 31-may-2025
   'http://localhost:3000',            // Local development environment
 ];
 

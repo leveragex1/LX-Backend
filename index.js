@@ -31,7 +31,8 @@ const allowedOrigins = [
   // 'https://leveragex-4p2t.onrender.com',
   'https://leveragex-oqsf.onrender.com',        // 31-may-2025
   'https://leveragex-rrf8.onrender.com',        // 1-aug-2025
-  'http://localhost:3000',            // Local development environment
+  'http://localhost:3000',  
+  'https://leveragexfund.onrender.com',// Local development environment
 ];
 
 const corsOptions = {

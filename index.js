@@ -43,7 +43,7 @@ const allowedOrigins = [
   //'https://leveragex-mpqr.onrender.com'
   //'https://leveragex-nl0b.onrender.com',
   //'https://leveragex-r6c9.onrender.com',
-  'https://frontend-ghd0.onrender.com', //Local development environment
+  'https://frontend-ghd0.onrender.com' //Local development environment
 ];
 
 const corsOptions = {

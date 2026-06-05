@@ -29,9 +29,9 @@ const allowedOrigins = [
   // 'https://leveragex-kuxu.onrender.com',  // 11-jan-2025
   // 'https://leveragex-9ndu.onrender.com',     // 31-march-2025
   // 'https://leveragex-4p2t.onrender.com',
-  'https://leveragex-oqsf.onrender.com',        // 31-may-2025
-  'https://leveragex-rrf8.onrender.com',        // 1-aug-2025
-  'http://localhost:3000',  
+  // 'https://leveragex-oqsf.onrender.com',        // 31-may-2025
+  // 'https://leveragex-rrf8.onrender.com',        // 1-aug-2025
+  // 'http://localhost:3000',  
   // 'https://leveragexfund.onrender.com',
   //'https://lx-frontend.onrender.com' 
   //'https://leveragex-2hpp.onrender.com',
@@ -41,7 +41,8 @@ const allowedOrigins = [
   //'https://leveragex-nl0b.onrender.com',
   //'https://leveragex-r6c9.onrender.com',
   //'https://leveragex-wswa.onrender.com',
-  'https://leveragex-s2l1.onrender.com'  //Local development environment
+  //'https://leveragex-s2l1.onrender.com' ,
+  'https://leveragex-qfft.onrender.com'//Local development environment
 ];
 
 const corsOptions = {

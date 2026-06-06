@@ -38,7 +38,8 @@ const allowedOrigins = [
   //'https://leveragex-n64p.onrender.com',
   //'https://leveragex-qfft.onrender.com',
   //'https://leveragex-xpvq.onrender.com',
-  'https://leveragex-7yui.onrender.com'//Local development environment
+  //'https://leveragex-7yui.onrender.com',
+  'https://leveragex-6tz2.onrender.com'   //Local development environment
 ];
 
 const corsOptions = {

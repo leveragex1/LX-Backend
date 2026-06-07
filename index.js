@@ -40,8 +40,9 @@ const allowedOrigins = [
   //'https://leveragex-xpvq.onrender.com',
   //'https://leveragex-7yui.onrender.com',
   //'https://leveragex-6tz2.onrender.com'  ,
-  'https://leveragex-9bvx.onrender.com'   //Local development environment
-];
+  // 'https://leveragex-9bvx.onrender.com'  ,
+  'https://leveragex-v4ix.onrender.com' 
+];             //Local development environment
 
 const corsOptions = {
   origin: function (origin, callback) {
